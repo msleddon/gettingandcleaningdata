@@ -45,5 +45,5 @@ reqdData <- cbind(combinedSubjects, combinedLabels, reqdData)
 avgData <- aggregate( . ~ subject:activity, reqdData, mean)
 
 ## write the data to file
-write.table(avgData, "averages_data.txt")
+write.table(avgData, "averages_data.txt", row.name=FALSE)
 
